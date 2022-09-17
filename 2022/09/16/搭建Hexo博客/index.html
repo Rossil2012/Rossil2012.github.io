@@ -4,21 +4,21 @@
   <meta charset="utf-8">
   
   
-  <title>搭建Hexo博客 | Hexo</title>
+  <title>搭建Hexo博客 | Rossil&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="第一次尝试在GitHub上搭建Hexo博客，在这里记录一下具体流程。 Hexo可以做什么？ 为网页提供HTTP服务 使用Markdown语法撰写博文 生成静态网页 （借助插件）一键部署至GitHub Pages  将Hexo部署至GitHub主页需要用到2&#x2F;3&#x2F;4这几个功能。 安装Hexo-CLI 预先安装好Node.js和Git123# 使用以下命令检查node -vgit">
 <meta property="og:type" content="article">
 <meta property="og:title" content="搭建Hexo博客">
-<meta property="og:url" content="http://example.com/2022/09/16/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:url" content="https://rossil2012.github.io/2022/09/16/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:site_name" content="Rossil&#39;s Blog">
 <meta property="og:description" content="第一次尝试在GitHub上搭建Hexo博客，在这里记录一下具体流程。 Hexo可以做什么？ 为网页提供HTTP服务 使用Markdown语法撰写博文 生成静态网页 （借助插件）一键部署至GitHub Pages  将Hexo部署至GitHub主页需要用到2&#x2F;3&#x2F;4这几个功能。 安装Hexo-CLI 预先安装好Node.js和Git123# 使用以下命令检查node -vgit">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-09-16T15:08:04.000Z">
-<meta property="article:modified_time" content="2022-09-17T03:53:56.730Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:modified_time" content="2022-09-17T04:05:24.927Z">
+<meta property="article:author" content="Rossil">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Rossil's Blog" type="application/atom+xml">
   
   
     <link rel="shortcut icon" href="/favicon.png">
@@ -46,7 +46,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
+        <a href="/" id="logo">Rossil&#39;s Blog</a>
       </h1>
       
     </div>
@@ -63,10 +63,10 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://rossil2012.github.io"></form>
       </div>
     </div>
   </div>
@@ -112,13 +112,15 @@
 
 <h3 id="部署至GitHub-Pages"><a href="#部署至GitHub-Pages" class="headerlink" title="部署至GitHub Pages"></a>部署至GitHub Pages</h3><ol>
 <li>安装<em>hexo-deployer-git</em>插件<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></li>
-<li>修改</li>
+<li>修改配置文件（<code>./_config.yml</code>）<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://www.github.com/&lt;user&gt;/&lt;repo&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li>部署<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure></li>
 </ol>
+<h3 id="其他配置"><a href="#其他配置" class="headerlink" title="其他配置"></a>其他配置</h3><p>参考<a target="_blank" rel="noopener" href="https://kchen.cc/2016/11/12/hexo-instructions/#%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE">这里</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/09/16/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/" data-id="cl84mdivj00015oiua1apai3e" data-title="搭建Hexo博客" class="article-share-link">Share</a>
+      <a data-url="https://rossil2012.github.io/2022/09/16/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/" data-id="cl84mdivj00015oiua1apai3e" data-title="搭建Hexo博客" class="article-share-link">Teilen</a>
       
       
       
@@ -126,25 +128,6 @@
   </div>
   
     
-<nav id="article-nav">
-  
-    <a href="/2022/09/17/hhh/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          hhh
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2022/09/16/test1/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">test1</div>
-    </a>
-  
-</nav>
-
   
 </article>
 
@@ -163,9 +146,9 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Archiv</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">九月 2022</a></li></ul>
     </div>
   </div>
 
@@ -173,28 +156,12 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">letzter Beitrag</h3>
     <div class="widget">
       <ul>
         
           <li>
-            <a href="/2022/09/17/hhh/">hhh</a>
-          </li>
-        
-          <li>
             <a href="/2022/09/16/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/">搭建Hexo博客</a>
-          </li>
-        
-          <li>
-            <a href="/2022/09/16/test1/">test1</a>
-          </li>
-        
-          <li>
-            <a href="/2022/09/16/test123/">test123</a>
-          </li>
-        
-          <li>
-            <a href="/2022/09/16/test/">test</a>
           </li>
         
       </ul>
@@ -210,7 +177,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       
-      &copy; 2022 John Doe<br>
+      &copy; 2022 Rossil<br>
       Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
